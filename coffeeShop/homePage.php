@@ -9,7 +9,7 @@ get_header();
   <div class="showcase-img">
     <div class="colona">
         <div class="text_container text-center">
-          <h4>Lorem ipsum dolor sit amet.</h4>
+          <h1>Lorem ipsum dolor sit amet.</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
             deserunt velit provident corrupti earum quis!
@@ -26,7 +26,32 @@ get_header();
     <div class="container">
       <div class="row row-cols-1 row-cols-lg-3 g-5">
 
-        <a href="/wordpress_coffee-shop/wordpress/coffee-menu">
+      <?php
+        $args = array(
+          'post_type' => 'post',
+          'posts_per_page' => 3,
+          'facetwp' => true,
+        );
+        $query = new WP_Query($args);
+        ?>
+        <?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
+  
+        <a href="wordpress_coffee/coffee">
+          <div class="col">
+            <div class="card-bg-img first" style="background: ('<?php echo get_the_post_thumbnail()?>')";>
+              <div class="card-text text-center">
+                <p><?php echo the_content(); ?></p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <?php endwhile; ?>
+        <?php endif; ?>
+        <?php wp_reset_postdata(); ?>
+
+<!--       
+        <a href="/wordpress_coffee/cakes/">
           <div class="col">
             <div class="card-bg-img first">
               <div class="card-text text-center">
@@ -35,9 +60,9 @@ get_header();
               </div>
             </div>
           </div>
-        </a>
-
-        <a href="/wordpress_coffee-shop/wordpress/cakes-menu">
+        </a> -->
+<!-- 
+        <a href="/wordpress_coffee/cakes/">
           <div class="col">
             <div class="card-bg-img second">
             <div class="card-text text-center">
@@ -47,7 +72,6 @@ get_header();
             </div>
           </div>
         </a>
-
         <a href="/wordpress_coffee-shop/wordpress/cakes-menu">
           <div class="col">
             <div class="card-bg-img third">
@@ -57,7 +81,7 @@ get_header();
               </div>
             </div>
           </div>
-        </a>
+        </a> -->
       </div>
     </div>
   </section>
@@ -68,7 +92,7 @@ get_header();
     <div class="container">
       <div class="row row-cols-1 row-cols-md-3 g-3">
         <div class="col text">
-
+        
         <?php
           if( have_posts() ){
               while( have_posts() ){
@@ -77,8 +101,8 @@ get_header();
               }
           }
         ?>
-        
-          <h2>Lorem ipsum dolor sit amet.</h2>
+
+          <h2>Lounge Interior with Calm Music for Chill Out</h2>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis accusantium porro sequi error animi mollitia.</p>
           <div class="btn btn-primary">Read more</div>
         </div>
@@ -121,7 +145,7 @@ get_header();
       <div class="row row-cols-1 row-cols-md-4 g-3">
         <div class="col">
           <div class="card text-center">
-            <p class="icon"><i class="bi bi-cup-straw"></i></p>
+            <p class="icon"><i class="bi bi-trophy"></i></p>
             <h4>High Quality</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, mollitia.</p>
           </div>
@@ -129,8 +153,16 @@ get_header();
 
         <div class="col">
           <div class="card text-center">
-            <p class="icon"><i class="bi bi-cup-straw"></i></p>
-            <h4>High Quality</h4>
+            <p class="icon"><i class="bi bi-cup"></i></p>
+            <h4>Awesome Aroma</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, mollitia.</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center">
+            <p class="icon"><i class="bi bi-funnel"></i></p>
+            <h4>Pure Grades</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, mollitia.</p>
           </div>
         </div>
@@ -138,15 +170,7 @@ get_header();
         <div class="col">
           <div class="card text-center">
             <p class="icon"><i class="bi bi-cup-straw"></i></p>
-            <h4>High Quality</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, mollitia.</p>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card text-center">
-            <p class="icon"><i class="bi bi-cup-straw"></i></p>
-            <h4>High Quality</h4>
+            <h4>Proper Roasting</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, mollitia.</p>
           </div>
         </div>

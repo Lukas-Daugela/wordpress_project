@@ -11,7 +11,7 @@
 
 <header class="nav-header">
   <nav class="navigation-bar">
-    <a href="/wordpress_coffee-shop/wordpress" class="branding-link">
+    <a href="/wordpress_coffee" class="branding-link">
       <div class="nav-branding"></div>
     </a>
   

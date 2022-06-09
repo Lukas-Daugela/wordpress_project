@@ -101,7 +101,7 @@ a {
   .navigation-menu {
     position: fixed;
     left: -100%;
-    top: 90px;
+    top: 135px;
     gap: 0;
     flex-direction: column;
     background-color: #2c1b14;
@@ -178,8 +178,8 @@ a {
   height: 350px;
   flex-direction: column;
   color: white;
-  align-items: center;
-  opacity: 0.7;
+  /* align-items: center; */
+  /* opacity: 0.7; */
   justify-content: end;
 }
 
@@ -194,7 +194,7 @@ a {
 }
 
 .menu-cards .first {
-  background-image: url(../images/coffee_images/coffee_cup_1.jpg);
+  /* background-image: url(../images/coffee_images/coffee_cup_1.jpg); */
 }
 
 .menu-cards .second {
@@ -212,11 +212,16 @@ a {
   padding: 50px 0;
 }
 
+.text-and-img p {
+  max-width: 35ch;
+}
+
 .text-and-img .text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: start;
+  margin: 0;
 }
 
 .text-and-img .col,
@@ -226,15 +231,15 @@ a {
 
 .text-and-img .img-container {
   background-position: center;
-  background-size: center;
+  background-size: cover;
 }
 
 .text-and-img .img1 {
-  background-image: url(../images/lounge_2.jpg);
+  background-image: url(../images/coffee-shop.jpg);
 }
 
 .text-and-img .img2 {
-  background-image: url(../images/lounge_2.jpg);
+  background-image: url(../images/coffee-shop3.jpg);
 }
 
 /* Discound card section */
@@ -250,11 +255,11 @@ a {
 .discount-card {
   background-color: #200e02;
   color: white;
-  padding: 50px 0;
+  padding: 100px 0 50px;
 }
 
 .discount-card .img {
-  background-image: url(../images/coffee_images/coffee_cup_3.jpg);
+  background-image: url(../images/coffee_images/coffee_cup_5.jpg);
   background-position: center;
   background-size: cover;
   height: 400px;
@@ -362,7 +367,7 @@ a {
 ***
 */
 .about-section {
-  padding: 50px 0;
+  padding: 100px 0;
   background-color: #200e02;
   color: white;
 }
@@ -477,7 +482,7 @@ a {
 
 .feedback-section .person-img {
   /* prideti random zmoniu generatoriu ir isimt photo ir vardus*/
-  background-image: url(../images/avatar.png);
+  background-image: url(../images/person_photo.jpg);
   background-position: center;
   background-size: cover;
   width: 100px;
