@@ -1,0 +1,661 @@
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* 
+***
+* SECTION FOR NAVBAR
+***
+*/
+.nav-header .nav-branding {
+  background-image: url(../images/logo.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80px;
+  width: 155px;
+}
+
+.nav-header {
+  background-color: #2c1b14;
+  padding: 6px 0;
+}
+
+.navigation-bar li {
+  list-style: none;
+}
+
+.navigation-bar ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+a {
+  color: #af751e;
+  text-decoration: none;
+}
+
+.navigation-bar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 75px;
+}
+
+.navigation-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav-branding {
+  font-size: 2rem;
+}
+
+.navigation-link {
+  transition: 0.7s ease;
+}
+
+.navigation-link:hover {
+  color: white;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navigation-menu {
+    position: fixed;
+    left: -100%;
+    top: 90px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #2c1b14;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .navigation-item {
+    margin: 16px 0;
+  }
+
+  .navigation-menu.active {
+    left: 0;
+  }
+
+  .navigation-bar li {
+    margin-bottom: 20px;
+  }
+}
+
+/* 
+***
+* SECTION FOR MAIN STYLE
+***
+*/
+
+/* Buttons */
+.btn-primary {
+  background-color: #af751e !important;
+  border-color: #af751e !important;
+}
+
+/* Showcase */
+.showcase-img {
+  background-image: url(../images/coffee_images/coffee_background_1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+}
+
+.showcase-img .colona {
+  display: flex;
+  align-items: center;
+  height: 95%;
+  padding: 0px 10px;
+}
+
+.text_container {
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .showcase-img .colona {
+    width: 50%;
+    margin-left: auto;
+  }
+  .showcase-img .text_container {
+    margin-top: 30%;
+  }
+}
+
+/* Menu cards */
+.menu-cards {
+  background-color: #200e02;
+  padding: 50px 0;
+}
+
+.menu-cards .card-bg-img {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  height: 350px;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  opacity: 0.7;
+  justify-content: end;
+}
+
+.menu-cards .card-bg-img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.menu-cards p {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.menu-cards .first {
+  background-image: url(../images/coffee_images/coffee_cup_1.jpg);
+}
+
+.menu-cards .second {
+  background-image: url(../images/cake/cake_9.jpg);
+}
+
+.menu-cards .third {
+  background-image: url(../images/cake/cake_8.jpg);
+}
+
+/* Text with Photo's */
+.text-and-img {
+  background-color: #2e180a;
+  color: white;
+  padding: 50px 0;
+}
+
+.text-and-img .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.text-and-img .col,
+.text-and-img .img-container {
+  height: 300px;
+}
+
+.text-and-img .img-container {
+  background-position: center;
+  background-size: center;
+}
+
+.text-and-img .img1 {
+  background-image: url(../images/lounge_2.jpg);
+}
+
+.text-and-img .img2 {
+  background-image: url(../images/lounge_2.jpg);
+}
+
+/* Discound card section */
+.discount-card .text-col {
+  background-color: #321604;
+  padding: 45px 0;
+}
+
+.discount-card .img-col {
+  padding: 0;
+}
+
+.discount-card {
+  background-color: #200e02;
+  color: white;
+  padding: 50px 0;
+}
+
+.discount-card .img {
+  background-image: url(../images/coffee_images/coffee_cup_3.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+
+.discount-card .text {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.discount-card p {
+  width: 40ch;
+}
+
+.discount-card .card-img {
+  background-image: url(../images/discount\ card.png);
+  background-position: center;
+  background-size: cover;
+  height: 80px;
+  width: 122px;
+}
+
+/* Coffee shop good properties cards */
+.cards-section {
+  padding: 50px 0 100px;
+  background-color: #200e02;
+  color: white;
+}
+
+.cards-section .icon {
+  color: #af751e;
+  font-size: 50px;
+  margin: 0;
+}
+
+.cards-section .card {
+  background-color: #4e1f00;
+  justify-content: center;
+  height: 250px;
+}
+
+.cards-section p {
+  color: #6c757d;
+}
+
+/* Booking form */
+.booking-form .form-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #4e1f00;
+  padding: 60px 15px;
+}
+
+.booking-section .form-box {
+  padding: 10px;
+  background-color: #4e1f00;
+}
+
+.booking-form .input,
+.booking-form .btn {
+  padding: 20px 50px;
+  border-radius: 35px;
+}
+
+.booking-section {
+  background-image: url(../images/booking-bg.png);
+  background-color: #200e02;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.booking-section .container {
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.booking-form .btn {
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .booking-section .container {
+    justify-content: right;
+    margin-right: 15%;
+  }
+  .booking-section .form-box {
+    padding: 20px;
+  }
+  .booking-form .form-container {
+    padding: 65px 50px;
+    border-radius: 20px;
+  }
+}
+
+/* 
+***
+* SECTION FOR ABOUT
+***
+*/
+.about-section {
+  padding: 50px 0;
+  background-color: #200e02;
+  color: white;
+}
+
+.about-section .photo {
+  background-image: url(../images/cake/cake_11.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 370px;
+  display: none;
+}
+
+.about-section span {
+  color: #af751e;
+}
+
+.about-section p {
+  font-size: 1.3rem;
+}
+
+.about-section h4 {
+  font-size: 1.8rem;
+}
+
+.about-section .opening-hours p,
+.about-section .opening-hours h4 {
+  padding-left: 25%;
+}
+
+@media (min-width: 992px) {
+  .about-section .opening-hours {
+    width: 28%;
+  }
+
+  .about-section .opening-hours p,
+  .about-section .opening-hours h4 {
+    padding-left: 0;
+  }
+
+  .about-section .text {
+    padding-right: 20px;
+  }
+
+  .about-section .photo {
+    display: block;
+  }
+}
+
+.about-section .row {
+  justify-content: center;
+}
+
+.about-section .about-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.about-section h2 {
+  font-size: 3rem;
+}
+
+.about-section .text p {
+  color: #6c757d;
+}
+
+/* 
+***
+* SECTION FOR FEEDBACK
+***
+*/
+.feedback-section {
+  background-image: url(../images/output-onlinepngtools.png);
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  color: white;
+  background-color: #200e02;
+}
+
+.feedback-section .underline {
+  height: 2px;
+  width: 100px;
+  background-color: #af751e;
+  margin-bottom: 5%;
+}
+
+.feedback-section .slides {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  height: 800px;
+  align-items: center;
+}
+
+.feedback-section .person-name {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.feedback-section h2 {
+  font-size: 3rem;
+}
+
+.feedback-section .carousel-control-next-icon,
+.feedback-section .carousel-control-prev-icon {
+  background-color: #0f0f0fc9;
+}
+
+.feedback-section .person-img {
+  /* prideti random zmoniu generatoriu ir isimt photo ir vardus*/
+  background-image: url(../images/avatar.png);
+  background-position: center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  margin: 15px 0 50px 0;
+}
+
+@media (min-width: 768px) {
+  .feedback-section,
+  .feedback-section .slides {
+    height: 600px;
+  }
+}
+
+/* 
+***
+* SECTION FOR CAKES MENU
+***
+*/
+.cakes-menu {
+  padding: 50px 0;
+  background-color: #321604;
+  color: #af751e;
+}
+
+.cakes-menu h5 {
+  color: white;
+}
+
+.cakes-menu li,
+.cakes-menu .top-holder {
+  display: flex;
+}
+
+.cakes-menu li {
+  border-bottom: 1px solid #af751e;
+  margin: 5px 0;
+}
+
+.cakes-menu .cake-photo {
+  background-image: url(../images/cake/cake_9.jpg);
+  height: 50px;
+  width: 50px;
+  background-position: center;
+  background-size: cover;
+  margin-top: 10px;
+  border-radius: 30px;
+}
+
+.cakes-menu .price-holder {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.cakes-menu .desc-container {
+  padding: 10px 0 0 30px;
+}
+
+/* 
+***
+* SECTION FOR COFFEE MENU
+***
+*/
+.cakes-menu .coffee-photo {
+  background-image: url(../images/coffee_images/coffee_cup_10.jpg);
+  height: 50px;
+  width: 50px;
+  background-position: center;
+  background-size: cover;
+  margin-top: 10px;
+  border-radius: 30px;
+}
+
+/* 
+***
+* SECTION FOR FOOTER
+***
+*/
+
+/* Contacts footer */
+.footer-section {
+  background-color: #2a1b16;
+  padding: 10px 0;
+}
+
+.footer-section hr {
+  color: white;
+  margin: 0;
+}
+
+.footer-section .container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.coffee-logo {
+  background-image: url(../images/logo.jpg);
+  height: 126px;
+  width: 240px;
+}
+
+footer {
+  background-color: #321604;
+  color: white;
+  padding: 10px 0;
+}
+
+footer .first p {
+  color: #6c757d;
+  display: flex;
+  text-align: center;
+}
+
+footer .footer-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+footer .col .line {
+  height: 2px;
+  width: 153px;
+  background-color: #af751e;
+  margin-bottom: 25px;
+}
+
+footer .second p {
+  margin: 0;
+}
+
+footer .location-bottom-holder {
+  margin-bottom: 18px;
+}
+
+footer h4,
+footer p {
+  color: #af751e;
+}
+
+footer a {
+  color: white;
+}
+
+footer input {
+  border-radius: 62px;
+  height: 41px;
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+
+footer .icons i {
+  margin: 0 10px;
+  color: #af751e;
+}
+
+footer .btn {
+  border-radius: 62px;
+}
+
+@media (min-width: 768px) {
+  footer .footer-con {
+    display: block;
+  }
+
+  footer .col {
+    width: 25%;
+  }
+
+  footer .row {
+    justify-content: space-around;
+  }
+
+  footer .first p {
+    color: #6c757d;
+    display: block;
+    text-align: start;
+  }
+}
