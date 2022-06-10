@@ -193,9 +193,9 @@ a {
   margin-bottom: 0;
 }
 
-.menu-cards .first {
-  /* background-image: url(../images/coffee_images/coffee_cup_1.jpg); */
-}
+/* .menu-cards .first {
+   background-image: url(../images/coffee_images/coffee_cup_1.jpg); 
+} */
 
 .menu-cards .second {
   background-image: url(../images/cake/cake_9.jpg);
@@ -226,7 +226,7 @@ a {
 
 .text-and-img .col,
 .text-and-img .img-container {
-  height: 300px;
+  height: 345px;
 }
 
 .text-and-img .img-container {
@@ -373,7 +373,7 @@ a {
 }
 
 .about-section .photo {
-  background-image: url(../images/cake/cake_11.jpg);
+  background-image: url(../images/coffee_images/coffee_cup_4.jpg);
   background-position: center;
   background-size: cover;
   height: 370px;

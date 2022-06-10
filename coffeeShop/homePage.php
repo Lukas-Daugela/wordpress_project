@@ -9,10 +9,9 @@ get_header();
   <div class="showcase-img">
     <div class="colona">
         <div class="text_container text-center">
-          <h1>Lorem ipsum dolor sit amet.</h1>
+          <h1>COFFEE SHOP</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-            deserunt velit provident corrupti earum quis!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque nemo quos possimus voluptate cumque, repellendus nulla! Adipisci provident optio ullam ex illum voluptatibus tempora voluptatem quam magni voluptatum, laudantium reprehenderit.
           </p>
           <div class="btn btn-primary">Read more</div>
         </div>
