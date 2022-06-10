@@ -1,5 +1,6 @@
 body {
   -webkit-font-smoothing: antialiased;
+  position: relative;
 }
 
 * {
@@ -137,7 +138,8 @@ a {
 
 /* Showcase */
 .showcase-img {
-  background-image: url(../images/coffee_images/coffee_background_1.jpg);
+  background-color: #2c1b14;
+  background-image: url(../images/show-bg.png);
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -195,7 +197,7 @@ a {
 
 /* .menu-cards .first {
    background-image: url(../images/coffee_images/coffee_cup_1.jpg); 
-} */
+} 
 
 .menu-cards .second {
   background-image: url(../images/cake/cake_9.jpg);
@@ -203,7 +205,7 @@ a {
 
 .menu-cards .third {
   background-image: url(../images/cake/cake_8.jpg);
-}
+} */
 
 /* Text with Photo's */
 .text-and-img {
@@ -219,7 +221,7 @@ a {
 .text-and-img .text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: start;
   margin: 0;
 }
@@ -246,6 +248,7 @@ a {
 .discount-card .text-col {
   background-color: #321604;
   padding: 45px 0;
+  height: 500px;
 }
 
 .discount-card .img-col {
@@ -255,14 +258,14 @@ a {
 .discount-card {
   background-color: #200e02;
   color: white;
-  padding: 100px 0 50px;
+  padding: 100px 0;
 }
 
 .discount-card .img {
   background-image: url(../images/coffee_images/coffee_cup_5.jpg);
   background-position: center;
   background-size: cover;
-  height: 400px;
+  height: 500px;
 }
 
 .discount-card .text {
@@ -287,7 +290,7 @@ a {
 
 /* Coffee shop good properties cards */
 .cards-section {
-  padding: 50px 0 100px;
+  padding: 100px 0 50px;
   background-color: #200e02;
   color: white;
 }
@@ -367,7 +370,7 @@ a {
 ***
 */
 .about-section {
-  padding: 100px 0;
+  padding: 50px 0 100px;
   background-color: #200e02;
   color: white;
 }
@@ -588,6 +591,9 @@ a {
 
 footer {
   background-color: #321604;
+  position: absolute;
+  left: 0;
+  right: 0;
   color: white;
   padding: 10px 0;
 }

@@ -20,7 +20,6 @@ get_header();
 
 
   <!-- Menu cards -->
-  <!-- uzdeti tinkamas img, background color, opacity, JS paryskinanti efekta on hover -->
   <section class="menu-cards">
     <div class="container">
       <div class="row row-cols-1 row-cols-lg-3 g-5">
@@ -37,7 +36,7 @@ get_header();
   
         <a href="wordpress_coffee/coffee">
           <div class="col">
-            <div class="card-bg-img first" style="background: ('<?php echo get_the_post_thumbnail()?>')";>
+            <div class="card-bg-img first" style="background: url('<?php get_the_post_thumbnail()?>');">
               <div class="card-text text-center">
                 <p><?php echo the_content(); ?></p>
               </div>
@@ -59,8 +58,7 @@ get_header();
               </div>
             </div>
           </div>
-        </a> -->
-<!-- 
+        </a>
         <a href="/wordpress_coffee/cakes/">
           <div class="col">
             <div class="card-bg-img second">
@@ -91,7 +89,7 @@ get_header();
     <div class="container">
       <div class="row row-cols-1 row-cols-md-3 g-3">
         <div class="col text">
-        
+          
         <?php
           if( have_posts() ){
               while( have_posts() ){
@@ -101,9 +99,9 @@ get_header();
           }
         ?>
 
-          <h2>Lounge Interior with Calm Music for Chill Out</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis accusantium porro sequi error animi mollitia.</p>
-          <div class="btn btn-primary">Read more</div>
+          <!-- <h2>Lounge Interior with Calm Music for Chill Out</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis accusantium porro sequi error animi mollitia.</p> -->
+          <div class="btn btn-primary">Read more</div> 
         </div>
         
         <div class="col">
@@ -138,6 +136,25 @@ get_header();
   </section>
 
 
+  
+  
+  <!-- Booking form -->
+  <section class="booking-section">
+    <div class="container">
+      <div class="form-box">
+        <form action="" class="booking-form">
+          <div class="form-container">
+            <h2 class="text-center mb-4">Contact us <br> <span>for booking a table</span></h2>
+            <input type="text" class="input" placeholder="Name"><br>
+            <input type="text" class="input" placeholder="Phone"><br>
+            <input type="text" class="input" placeholder="Comment"><br>
+            <div class="btn btn-primary">Book Now</div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  
   <!-- Coffee shop good properties cards -->
   <section class="cards-section">
     <div class="container">
@@ -176,25 +193,6 @@ get_header();
       </div>
     </div>
   </section>
-
-
-  <!-- Booking form -->
-  <section class="booking-section">
-    <div class="container">
-      <div class="form-box">
-        <form action="" class="booking-form">
-          <div class="form-container">
-            <h2 class="text-center mb-4">Contact us <br> <span>for booking a table</span></h2>
-            <input type="text" class="input" placeholder="Name"><br>
-            <input type="text" class="input" placeholder="Phone"><br>
-            <input type="text" class="input" placeholder="Comment"><br>
-            <div class="btn btn-primary">Book Now</div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-
 
   <!-- About -->
   <section class="about-section">
