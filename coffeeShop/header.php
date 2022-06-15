@@ -12,7 +12,13 @@
 <header class="nav-header">
   <nav class="navigation-bar">
     <a href="/wordpress_coffee" class="branding-link">
-      <div class="nav-branding"></div>
+      <?php
+      if(function_exists('the_custom_logo')){
+        $custom_logo_id = get_theme_mod('custom_logo');
+        $logo = wp_get_attachment_image_src($custom_logo_id);
+      }
+      ?>
+      <img class="logo" src="<?php echo $logo[0] ?>" alt="logo">
     </a>
   
     <?php 

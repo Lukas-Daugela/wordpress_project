@@ -15,17 +15,13 @@ body {
 * SECTION FOR NAVBAR
 ***
 */
-.nav-header .nav-branding {
-  background-image: url(../images/logo.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 80px;
-  width: 155px;
+.nav-header .logo {
+  height: 120px;
 }
 
 .nav-header {
-  background-color: #2c1b14;
-  padding: 6px 0;
+  background-color: #2c1b1427;
+  margin-bottom: -120px;
 }
 
 .navigation-bar li {
@@ -38,7 +34,7 @@ body {
 }
 
 a {
-  color: #af751e;
+  color: white;
   text-decoration: none;
 }
 
@@ -105,7 +101,7 @@ a {
     top: 135px;
     gap: 0;
     flex-direction: column;
-    background-color: #2c1b14;
+    background-color: #2c1b1427;
     width: 100%;
     text-align: center;
     transition: 0.3s;
